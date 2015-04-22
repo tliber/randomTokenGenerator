@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='./client.js'>
+</head>
+
+<body>
+<form>
+  <input id = 'username' type="text" name="fname"><br>
+  <input id = 'user' type="submit" value="Submit">
+</form>
+<body/>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		
+	console.log('to 23')
+	$('#user').on('click', function(){
+		console.log('trigged')
+		console.log($('#username').val())
+		addUserSession($('#username').val())
+	})
+	})
+
+</script>
+<html/>
